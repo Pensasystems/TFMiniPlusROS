@@ -168,10 +168,12 @@ add_dependencies(change_address_node ${catkin_EXPORTED_TARGETS})
 # )
 target_link_libraries(range_sensor_node
    ${catkin_LIBRARIES}
+   i2c
 )
 
 target_link_libraries(change_address_node
    ${catkin_LIBRARIES}
+   i2c
 )
 
 #############
