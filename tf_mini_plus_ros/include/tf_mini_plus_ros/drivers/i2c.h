@@ -2,7 +2,12 @@
 #define I2C_H_
 
 #include <cstddef>
+extern "C"
+{
+#include <i2c/smbus.h>
+#include <linux/i2c.h>
 #include <linux/i2c-dev.h>
+}
 #include <sys/ioctl.h>
 #include <cstdlib>
 #include <cstdio>
